@@ -9,24 +9,28 @@ const BlogArea = () => {
       title: "SEO Service",
       desc: "Maximize Your Reach with Professional SEO Services",
       img: "/assets/img/blogs/seo.jpg",
+      link: "/blog/seo",
     },
     {
       id: "2",
       title: "Branding Design",
       desc: "Boost Your Brand with Expert Social Media Marketing Services",
       img: "/assets/img/blogs/1.jpg",
+      link: "/blog/branding-design",
     },
     {
       id: "3",
       title: "Web Development",
       desc: "Transform Your Online Presence with Advanced Web Development Services",
       img: "/assets/img/blogs/dev.jpg",
+      link: "/blog/web-development",
     },
     {
       id: "4",
       title: "Content Marketing Service",
       desc: "Build Strong Customer Relationships with Comprehensive Content Marketing Services",
       img: "/assets/img/blogs/4.JPG",
+      link: "/blog/marketing-content",
     },
   ];
 
@@ -85,7 +89,7 @@ const BlogArea = () => {
                       <p className="mb-0">{post.desc}</p>
                     </div>
 
-                    <Link href={`/blog-details/${post.id}`} className="btn">
+                    <Link href={post.link} className="btn">
                       <span>{arrowIcon}</span>
                       <span>{arrowIcon}</span>
                     </Link>

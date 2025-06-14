@@ -1,7 +1,8 @@
 "use client";
+
 import OffCanvas from "@/common/OffCanvas";
 import SearchArea from "@/common/SearchArea";
-import menu_data from "@/data/menu-data";
+import menu_data, { MenuItem } from "@/data/menu-data";
 import useSticky from "@/hooks/use-sticky";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -29,31 +30,21 @@ const HeaderOne = ({ style_2 }: any) => {
   const [isSearchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openCanvas, setOpenCavas] = useState(false);
-
   const [navTitle, setNavTitle] = useState("");
-  //openMobileMenu
+  const [navTitle2, setNavTitle2] = useState("");
+
   const openMobileMenu = (menu: string) => {
-    if (navTitle === menu) {
-      setNavTitle("");
-    } else {
-      setNavTitle(menu);
-    }
+    setNavTitle((prev) => (prev === menu ? "" : menu));
   };
 
-  const [navTitle2, setNavTitle2] = useState("");
-  //openMobileMenu
   const openMobileMenu2 = (menu: string) => {
-    if (navTitle2 === menu) {
-      setNavTitle2("");
-    } else {
-      setNavTitle2(menu);
-    }
+    setNavTitle2((prev) => (prev === menu ? "" : menu));
   };
 
   return (
     <>
       <header
-        className={`header-area ${sticky && "sticky-on"} ${
+        className={`header-area ${sticky ? "sticky-on" : ""} ${
           menuOpen ? "mobile-menu-open" : ""
         }`}
       >
@@ -94,7 +85,7 @@ const HeaderOne = ({ style_2 }: any) => {
               id="vorixNav"
             >
               <ul className="navbar-nav navbar-nav-scroll">
-                {menu_data.map((item, i) => (
+                {(menu_data as MenuItem[]).map((item, i) => (
                   <li key={i} className="vorix-dd">
                     <Link
                       href={item.link}
@@ -103,7 +94,7 @@ const HeaderOne = ({ style_2 }: any) => {
                     >
                       {item.title}
                     </Link>
-                    {item.has_dropdown && (
+                    {item.has_dropdown && item.sub_menus && (
                       <ul
                         className="vorix-dd-menu"
                         style={{
@@ -119,29 +110,23 @@ const HeaderOne = ({ style_2 }: any) => {
                             >
                               {sub_menu.title}
                             </Link>
-
-                            {"has_inner_dropdown" in sub_menu &&
-                              sub_menu.has_inner_dropdown && (
-                                <ul
-                                  className="vorix-dd-menu"
-                                  style={{
-                                    display:
-                                      navTitle2 === sub_menu.title
-                                        ? "block"
-                                        : "none",
-                                  }}
-                                >
-                                  {sub_menu?.inner_submenu?.map(
-                                    (inner_menu, inner_index) => (
-                                      <li key={inner_index}>
-                                        <Link href={inner_menu.link}>
-                                          {inner_menu.title}
-                                        </Link>
-                                      </li>
-                                    )
-                                  )}
-                                </ul>
-                              )}
+                            {sub_menu.has_inner_dropdown && sub_menu.inner_submenu && (
+                              <ul
+                                className="vorix-dd-menu"
+                                style={{
+                                  display:
+                                    navTitle2 === sub_menu.title ? "block" : "none",
+                                }}
+                              >
+                                {sub_menu.inner_submenu.map((inner_menu, inner_index) => (
+                                  <li key={inner_index}>
+                                    <Link href={inner_menu.link}>
+                                      {inner_menu.title}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -152,9 +137,8 @@ const HeaderOne = ({ style_2 }: any) => {
 
               <div className="d-flex align-items-center">
                 <div className="header-search-btn" id="searchButton">
-                  <button className="btn">
+                  <button className="btn" onClick={() => setSearchOpen(!isSearchOpen)}>
                     <svg
-                      onClick={() => setSearchOpen(!isSearchOpen)}
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -200,62 +184,7 @@ const HeaderOne = ({ style_2 }: any) => {
                       role="button"
                       aria-controls="sideMenuOffcanvas"
                     >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            d="M3 12H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                          <path
-                            d="M3 6H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                          <path
-                            d="M3 18H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            d="M3 12H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                          <path
-                            d="M3 6H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                          <path
-                            d="M3 18H21"
-                            stroke="#0E0E0E"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                        </svg>
-                      </span>
+                      <span>☰</span>
                     </a>
                   </div>
                 ) : (

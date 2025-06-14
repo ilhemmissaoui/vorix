@@ -5,27 +5,30 @@ import React, { useState } from "react";
 export const services = [
   {
     id: "1",
-    icon: "campaign", 
+    icon: "campaign",
     title: "Digital Marketing",
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/digital-marketing.jpg",
+    link: "/service-details",
   },
   {
     id: "2",
-    icon: "code", 
+    icon: "code",
     title: "Web Development",
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/webDev.jpg",
+    link: "/service-details",
   },
   {
     id: "3",
-    icon: "edit_note", 
+    icon: "edit_note",
     title: "Content creation",
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/mobileApp.jpg",
+    link: "/service-details",
   },
   {
     id: "4",
@@ -34,14 +37,16 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
+    link: "/service-details",
   },
   {
     id: "5",
-    icon: "search", 
+    icon: "search",
     title: "SEO optimization",
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/digital-marketing.jpg",
+    link: "/service-details",
   },
   {
     id: "6",
@@ -50,14 +55,16 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
+    link: "/service-details",
   },
   {
     id: "7",
-    icon: "videocam", 
+    icon: "videocam",
     title: "video production",
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
+    link: "/service-details",
   },
   {
     id: "8",
@@ -66,6 +73,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
+    link: "/service-details",
   },
 ];
 
@@ -92,7 +100,7 @@ const ServiceArea = () => {
           <div className="row g-4 g-lg-5">
             {services.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-xl-4">
-                <Link href={`/service-details/${item.id}`}>
+                <Link href={item.link}>
                   <div
                     onMouseEnter={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}
