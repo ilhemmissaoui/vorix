@@ -14,7 +14,7 @@
   width: 80%;
   height: 2px;
   background: none;
-  border-top: 2px dashed #aed8da;
+  border-top: 2px dashed #ff971e;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -38,9 +38,9 @@
 }
 
 .stepper-wrap span {
-  width: 40px;
-  height: 40px;
-  background: #aed8da;
+  width: 50px;
+  height: 50px;
+  background: #ff971e;
   border-radius: 50%;
   margin: 10px 0;
   animation: pulse 1.5s ease-in-out infinite;

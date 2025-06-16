@@ -177,7 +177,7 @@ const PortfolioArea = () => {
                         <h3 className="mb-0">Website Design</h3>
                         <p className="mb-0">Branding Design</p>
                       </div>
-                      <Link href="/portfolio-details" className="btn">
+                      <Link href="/portfolio" className="btn">
                         <span>→</span>
                         <span>→</span>
                       </Link>

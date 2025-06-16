@@ -5,7 +5,7 @@ import styles from "./ProcessArea.module.css";
 const ProcessArea = () => {
   return (
     <>
-      <div className="process-wrapper ">
+      <div className="process-wrapper bg-secondary">
         <div className="divider"></div>
 
         <div className="container">
