@@ -133,7 +133,7 @@ const TikTok = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 <motion.a
-                  href="#"
+                  href="/tiktok-agency"
                   className="btn btn-primary d-inline-block"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

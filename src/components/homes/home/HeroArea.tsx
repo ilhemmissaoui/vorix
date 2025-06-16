@@ -70,7 +70,7 @@ const HeroArea = () => {
                 transition={{ delay: 1.1, duration: 0.6 }}
               >
                 <motion.a
-                  href="#"
+                  href="/contact"
                   className="btn btn-primary d-inline-block"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}

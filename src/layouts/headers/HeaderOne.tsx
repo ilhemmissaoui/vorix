@@ -177,10 +177,8 @@ const HeaderOne = ({ style_2 }: any) => {
                     theme === "light-mode" ? "" : "light-mode-active"
                   }`}
                 >
-                  <span className="material-symbols-outlined moon">
-                    clear_day
-                  </span>
-                  <span className="material-symbols-outlined sun">bedtime</span>
+                  <span className="material-symbols-outlined moon">.</span>
+                  <span className="material-symbols-outlined sun">.</span>
                 </button>
                 {style_2 ? (
                   <div className="mb-3 mb-lg-0" id="sideMenuButton">

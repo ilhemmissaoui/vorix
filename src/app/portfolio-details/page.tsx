@@ -5,7 +5,7 @@ export const metadata = {
   title: "Portfolio Details SoleDigital - Creative Digital Agency ",
   description: "Portfolio SoleDigital - Creative Digital Agency HTML Template",
   icons: {
-    icon: "/assets/img/logo3.svg", // or "favicon.ico" or any path inside /public
+    icon: "/assets/img/logo3.svg", 
   },
 };
 

@@ -30,7 +30,7 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" href="/blog-details">
+                  <Link className="post-title" href="/blog">
                     Providing brilliant ideas For your business
                   </Link>
                 </div>
@@ -46,7 +46,7 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" href="/blog-details">
+                  <Link className="post-title" href="/blog">
                     Top tools for efficient web development
                   </Link>
                 </div>
@@ -62,7 +62,7 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" href="/blog-details">
+                  <Link className="post-title" href="/blog">
                     The Role Of Color Theory In Web Design
                   </Link>
                 </div>
