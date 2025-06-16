@@ -1,19 +1,20 @@
- 
-import Login from "@/components/login"; 
+import Login from "@/components/login";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-	title: "Login Vorix - Creative Digital Agency Next js Template",
-	description: "Vorix - Creative Digital Agency HTML Template",
-	 
+  title: "Login SoleDigital - Creative Digital Agency ",
+  description: "SoleDigital - Creative Digital Agency HTML Template",
+  icons: {
+    icon: "/assets/img/logo3.svg", // or "favicon.ico" or any path inside /public
+  },
 };
 
 const index = () => {
-	return (
-		<Wrapper>
-			<Login />
-		</Wrapper>
-	);
+  return (
+    <Wrapper>
+      <Login />
+    </Wrapper>
+  );
 };
 
 export default index;

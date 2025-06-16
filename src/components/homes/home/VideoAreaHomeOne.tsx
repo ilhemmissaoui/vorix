@@ -54,10 +54,11 @@ const VideoAreaHomeOne: React.FC = () => {
   return (
     <>
       <div
-        className="jarallax"
+        className="jarallax mb-30"
         data-jarallax
         data-speed="0.6"
         style={{ zIndex: "9999" }}
+        
       >
         {/* Video Popup */}
         <div ref={videoPopupRef} id="videoPopup" className="video-popup-iframe">

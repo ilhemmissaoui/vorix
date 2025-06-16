@@ -244,7 +244,7 @@ const ProjectArea = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="portfolio-card-two">
                   <img
-                    src="/assets/img/soleProjects/6.jpg"
+                    src="/assets/img/tourGuide/tou1.jpg"
                     alt=""
                     style={{
                       width: "100%",

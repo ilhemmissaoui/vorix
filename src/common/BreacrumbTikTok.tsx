@@ -24,7 +24,7 @@ const Breacrumb = ({
                 {title}
               </motion.h2>
 
-              <motion.h2
+              <motion.h3
                 className="mb-0 d-md-flex align-items-center"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Breacrumb = ({
                   tools, insights, and support needed to thrive on TikTok Live,
                   turning creativity into real-time engagement and revenue.
                 </motion.span>
-              </motion.h2>
+              </motion.h3>
             </div>
           </div>
         </div>

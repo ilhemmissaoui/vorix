@@ -18,7 +18,7 @@ const TikTokAgency = () => {
   return (
     <>
       <HeaderOne />
-      <Breacrumb title="TikTok Agency" subtitle="TikTok" />
+      <Breacrumb title="TIKTOK " subtitle=" CREATOR NETWORK AGENCY" />
       <CtaArea />
       <AboutTikTok />
       {/* <ProjectsArea /> */}

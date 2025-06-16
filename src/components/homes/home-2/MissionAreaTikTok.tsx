@@ -180,51 +180,41 @@ const MissionAreaTikTok = () => {
                 </motion.div>
               </div>
             </motion.div>
-            <motion.div
-              className="row mt-5 g-4"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              {/* Supported Regions */}
-              <div className="col-12 col-md-6">
-                <div
-                  className="p-4 rounded shadow-sm border h-100"
-                  style={{ backgroundColor: "#fff8f2" }}
-                >
-                  <h4 style={{ color: "#ff971e" }}>🌍 Supported Regions</h4>
-                  <p className="mb-2 fw-bold">We welcome creators from:</p>
-                  <ul className="ps-3 mb-0">
-                    <li>MENA: UAE, KSA, Egypt, Morocco, Tunisia & more</li>
-                    <li>North America: United States & Canada</li>
-                  </ul>
-                </div>
-              </div>
+          <motion.div
+  className="row mt-5 g-4"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+>
+  {/* Supported Regions */}
+  <div className="col-12 col-md-6">
+    <div className="info-box">
+      <h4 className="info-title">🌍 Supported Regions</h4>
+      <p className="mb-2 fw-bold">We welcome creators from:</p>
+      <ul className="ps-3 mb-0">
+        <li>MENA: UAE, KSA, Egypt, Morocco, Tunisia & more</li>
+        <li>North America: United States & Canada</li>
+      </ul>
+    </div>
+  </div>
 
-              {/* Eligibility Criteria */}
-              <div className="col-12 col-md-6">
-                <div
-                  className="p-4 rounded shadow-sm border h-100"
-                  style={{ backgroundColor: "#fff8f2" }}
-                >
-                  <h4 style={{ color: "#ff971e" }}>✅ Eligibility Criteria</h4>
-                  <ul className="ps-3 mb-0">
-                    <li>Go LIVE for at least 4 hours per day</li>
-                    <li>
-                      Follow TikTok's Community Guidelines and LIVE policies
-                    </li>
-                    <li>No history of major violations or bans</li>
-                    <li>Use only one active TikTok account</li>
-                    <li>Be located in MENA, USA, or Canada</li>
-                    <li>Not affiliated with another TikTok LIVE agency</li>
-                    <li>
-                      Show genuine engagement and commitment to LIVE content
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
+  {/* Eligibility Criteria */}
+  <div className="col-12 col-md-6">
+    <div className="info-box">
+      <h4 className="info-title">✅ Eligibility Criteria</h4>
+      <ul className="ps-3 mb-0">
+        <li>Go LIVE for at least 4 hours per day</li>
+        <li>Follow TikTok's Community Guidelines and LIVE policies</li>
+        <li>No history of major violations or bans</li>
+        <li>Use only one active TikTok account</li>
+        <li>Be located in MENA, USA, or Canada</li>
+        <li>Not affiliated with another TikTok LIVE agency</li>
+        <li>Show genuine engagement and commitment to LIVE content</li>
+      </ul>
+    </div>
+  </div>
+</motion.div>
           </div>
         </div>
 

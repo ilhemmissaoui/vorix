@@ -1,19 +1,20 @@
- 
 import PricingPlan from "@/components/pricing-plan";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-	title: "Pricing Plan Vorix - Creative Digital Agency Next js Template",
-	description: "Vorix - Creative Digital Agency HTML Template",
-	 
+  title: "Pricing Plan SoleDigital - Creative Digital Agency ",
+  description: "SoleDigital - Creative Digital Agency HTML Template",
+  icons: {
+    icon: "/assets/img/logo3.svg", // or "favicon.ico" or any path inside /public
+  },
 };
 
 const index = () => {
-	return (
-		<Wrapper>
-			<PricingPlan />
-		</Wrapper>
-	);
+  return (
+    <Wrapper>
+      <PricingPlan />
+    </Wrapper>
+  );
 };
 
 export default index;

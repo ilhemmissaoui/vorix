@@ -2,8 +2,11 @@ import HomeTwo from "@/components/homes/home-2";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Vorix - Creative Digital Agency Next js Template",
-  description: "Vorix - Creative Digital Agency HTML Template",
+  title: "SoleDigital - Creative Digital Agency ",
+  description: "SoleDigital - Creative Digital Agency HTML Template",
+  icons: {
+    icon: "/assets/img/logo3.svg", // or "favicon.ico" or any path inside /public
+  },
 };
 
 const index = () => {

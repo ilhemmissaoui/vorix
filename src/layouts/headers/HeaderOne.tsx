@@ -70,8 +70,8 @@ const HeaderOne = ({ style_2 }: any) => {
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#vorixNav"
-              aria-controls="vorixNav"
+              data-bs-target="#SoleDigitalNav"
+              aria-controls="SoleDigitalNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -82,11 +82,11 @@ const HeaderOne = ({ style_2 }: any) => {
               className={`collapse navbar-collapse justify-content-end ${
                 menuOpen ? "show" : ""
               }`}
-              id="vorixNav"
+              id="SoleDigitalNav"
             >
               <ul className="navbar-nav navbar-nav-scroll">
                 {(menu_data as MenuItem[]).map((item, i) => (
-                  <li key={i} className="vorix-dd">
+                  <li key={i} className="SoleDigital-dd">
                     <Link
                       href={item.link}
                       onMouseEnter={() => setNavTitle(item.title)}
@@ -96,13 +96,13 @@ const HeaderOne = ({ style_2 }: any) => {
                     </Link>
                     {item.has_dropdown && item.sub_menus && (
                       <ul
-                        className="vorix-dd-menu"
+                        className="SoleDigital-dd-menu"
                         style={{
                           display: navTitle === item.title ? "block" : "none",
                         }}
                       >
                         {item.sub_menus.map((sub_menu, index) => (
-                          <li key={index} className="vorix-dd">
+                          <li key={index} className="SoleDigital-dd">
                             <Link
                               href={sub_menu.link}
                               onClick={() => openMobileMenu2(sub_menu.title)}
@@ -110,23 +110,28 @@ const HeaderOne = ({ style_2 }: any) => {
                             >
                               {sub_menu.title}
                             </Link>
-                            {sub_menu.has_inner_dropdown && sub_menu.inner_submenu && (
-                              <ul
-                                className="vorix-dd-menu"
-                                style={{
-                                  display:
-                                    navTitle2 === sub_menu.title ? "block" : "none",
-                                }}
-                              >
-                                {sub_menu.inner_submenu.map((inner_menu, inner_index) => (
-                                  <li key={inner_index}>
-                                    <Link href={inner_menu.link}>
-                                      {inner_menu.title}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
+                            {sub_menu.has_inner_dropdown &&
+                              sub_menu.inner_submenu && (
+                                <ul
+                                  className="SoleDigital-dd-menu"
+                                  style={{
+                                    display:
+                                      navTitle2 === sub_menu.title
+                                        ? "block"
+                                        : "none",
+                                  }}
+                                >
+                                  {sub_menu.inner_submenu.map(
+                                    (inner_menu, inner_index) => (
+                                      <li key={inner_index}>
+                                        <Link href={inner_menu.link}>
+                                          {inner_menu.title}
+                                        </Link>
+                                      </li>
+                                    )
+                                  )}
+                                </ul>
+                              )}
                           </li>
                         ))}
                       </ul>
@@ -137,7 +142,10 @@ const HeaderOne = ({ style_2 }: any) => {
 
               <div className="d-flex align-items-center">
                 <div className="header-search-btn" id="searchButton">
-                  <button className="btn" onClick={() => setSearchOpen(!isSearchOpen)}>
+                  <button
+                    className="btn"
+                    onClick={() => setSearchOpen(!isSearchOpen)}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -184,6 +192,7 @@ const HeaderOne = ({ style_2 }: any) => {
                       role="button"
                       aria-controls="sideMenuOffcanvas"
                     >
+                      <span>☰</span>
                       <span>☰</span>
                     </a>
                   </div>

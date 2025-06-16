@@ -1,19 +1,20 @@
- 
 import Service from "@/components/service";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-	title: "Service Vorix - Creative Digital Agency Next js Template",
-	description: "Vorix - Creative Digital Agency HTML Template",
-	 
+  title: "Service SoleDigital - Creative Digital Agency ",
+  description: "SoleDigital - Creative Digital Agency HTML Template",
+  icons: {
+    icon: "/assets/img/logo3.svg", // or "favicon.ico" or any path inside /public
+  },
 };
 
 const index = () => {
-	return (
-		<Wrapper>
-			<Service />
-		</Wrapper>
-	);
+  return (
+    <Wrapper>
+      <Service />
+    </Wrapper>
+  );
 };
 
 export default index;
