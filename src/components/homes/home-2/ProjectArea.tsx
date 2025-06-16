@@ -111,7 +111,7 @@ const ProjectArea = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="portfolio-card-two">
                   <img
-                    src="/assets/img/1.png"
+                    src="/assets/img/soleProjects/1.jpg"
                     alt=""
                     style={{
                       width: "100%",
@@ -121,7 +121,7 @@ const ProjectArea = () => {
                   />
 
                   <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
-                    <a href="#">
+                    <a href="/portfolio">
                       <span className="material-symbols-outlined">
                         arrow_outward
                       </span>
@@ -130,15 +130,15 @@ const ProjectArea = () => {
                 </div>
 
                 <div className="portfolio-content-two">
-                  <h3>Branding Design platform</h3>
-                  <p className="mb-0">Branding Design</p>
+                  <h3>Burger</h3>
+                  <p className="mb-0">Food and Beverage</p>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide className="swiper-slide">
                 <div className="portfolio-card-two">
                   <img
-                    src="/assets/img/2.png"
+                    src="/assets/img/soleProjects/2.jpg"
                     alt=""
                     style={{
                       width: "100%",
@@ -148,7 +148,7 @@ const ProjectArea = () => {
                   />
 
                   <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
-                    <a href="#">
+                    <a href="/portfolio">
                       <span className="material-symbols-outlined">
                         arrow_outward
                       </span>
@@ -157,15 +157,15 @@ const ProjectArea = () => {
                 </div>
 
                 <div className="portfolio-content-two">
-                  <h3>Product Development</h3>
-                  <p className="mb-0">Product Development</p>
+                  <h3>Cavaliero</h3>
+                  <p className="mb-0">Arrangement, Fourniture</p>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide className="swiper-slide">
                 <div className="portfolio-card-two">
                   <img
-                    src="/assets/img/3.png"
+                    src="/assets/img/soleProjects/3.jpg"
                     alt=""
                     style={{
                       width: "100%",
@@ -175,7 +175,7 @@ const ProjectArea = () => {
                   />
 
                   <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
-                    <a href="#">
+                    <a href="/portfolio">
                       <span className="material-symbols-outlined">
                         arrow_outward
                       </span>
@@ -184,15 +184,15 @@ const ProjectArea = () => {
                 </div>
 
                 <div className="portfolio-content-two">
-                  <h3>Branding Design platform</h3>
-                  <p className="mb-0">Branding Design</p>
+                  <h3>Pulse</h3>
+                  <p className="mb-0">Sport</p>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide className="swiper-slide">
                 <div className="portfolio-card-two">
                   <img
-                    src="/assets/img/4.png"
+                    src="/assets/img/soleProjects/4.jpg"
                     alt=""
                     style={{
                       width: "100%",
@@ -202,7 +202,7 @@ const ProjectArea = () => {
                   />
 
                   <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
-                    <a href="#">
+                    <a href="/portfolio">
                       <span className="material-symbols-outlined">
                         arrow_outward
                       </span>
@@ -211,8 +211,60 @@ const ProjectArea = () => {
                 </div>
 
                 <div className="portfolio-content-two">
-                  <h3>Product Development</h3>
-                  <p className="mb-0">Product Development</p>
+                  <h3>Home arrow</h3>
+                  <p className="mb-0">real estate</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="portfolio-card-two">
+                  <img
+                    src="/assets/img/soleProjects/5.jpg"
+                    alt=""
+                    style={{
+                      width: "100%",
+                      height: "400px",
+                      objectFit: "cover",
+                    }}
+                  />
+
+                  <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
+                    <a href="/portfolio">
+                      <span className="material-symbols-outlined">
+                        arrow_outward
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="portfolio-content-two">
+                  <h3>Extra Beauty</h3>
+                  <p className="mb-0">aesthetics and cosmetics</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="portfolio-card-two">
+                  <img
+                    src="/assets/img/soleProjects/6.jpg"
+                    alt=""
+                    style={{
+                      width: "100%",
+                      height: "400px",
+                      objectFit: "cover",
+                    }}
+                  />
+
+                  <div className="portfolio-overlay-content d-flex align-items-center justify-content-between">
+                    <a href="/portfolio">
+                      <span className="material-symbols-outlined">
+                        arrow_outward
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="portfolio-content-two">
+                  <h3>Tour Guide</h3>
+                  <p className="mb-0">Travel</p>
                 </div>
               </SwiperSlide>
             </Swiper>

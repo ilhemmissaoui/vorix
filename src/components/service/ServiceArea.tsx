@@ -10,7 +10,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/digital-marketing.jpg",
-    link: "/service-details",
+    link: "/service/digital-marketing",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/webDev.jpg",
-    link: "/service-details",
+    link: "/service/web-development",
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/mobileApp.jpg",
-    link: "/service-details",
+    link: "/service/content-creation",
   },
   {
     id: "4",
@@ -37,7 +37,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
-    link: "/service-details",
+    link: "/service/graphic-design",
   },
   {
     id: "5",
@@ -46,7 +46,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/digital-marketing.jpg",
-    link: "/service-details",
+    link: "/service/seo-optimization",
   },
   {
     id: "6",
@@ -55,7 +55,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
-    link: "/service-details",
+    link: "/service/social-media-management",
   },
   {
     id: "7",
@@ -64,7 +64,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
-    link: "/service-details",
+    link: "/service/video-production",
   },
   {
     id: "8",
@@ -73,7 +73,7 @@ export const services = [
     description:
       "Designed user interface contributes to a positive and a good user experience.",
     bgImage: "assets/img/ux.jpg",
-    link: "/service-details",
+    link: "/service/influencers-marketing",
   },
 ];
 

@@ -5,29 +5,25 @@ import "jarallax/dist/jarallax.css";
 
 const VideoArea: React.FC = () => {
   const videoPopupRef = useRef<HTMLDivElement | null>(null);
-  const videoFrameRef = useRef<HTMLIFrameElement | null>(null);
+  const videoTagRef = useRef<HTMLVideoElement | null>(null);
+  const sourceRef = useRef<HTMLSourceElement | null>(null);
 
   useEffect(() => {
-    const jarallaxElements =
-      document.querySelectorAll<HTMLElement>(".jarallax");
-
-    // Video Popup Logic
     const videoPopup = videoPopupRef.current;
-    const videoFrame = videoFrameRef.current;
+    const videoTag = videoTagRef.current;
+    const sourceTag = sourceRef.current;
 
-    if (videoPopup && videoFrame) {
+    if (videoPopup && videoTag && sourceTag) {
       document.querySelectorAll<HTMLElement>(".video-btn").forEach((button) => {
         button.addEventListener("click", function () {
           const videoUrl = (this as HTMLElement).getAttribute("data-video");
           if (videoUrl) {
-            let updatedUrl =
-              videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")
-                ? `${videoUrl}?autoplay=1`
-                : videoUrl.includes("vimeo.com")
-                ? `${videoUrl}?autoplay=1`
-                : videoUrl;
+            // Optional: replace Dropbox share link with direct download link
+            const directUrl = videoUrl.replace("www.dropbox.com", "dl.dropboxusercontent.com").replace("?dl=0", "");
 
-            videoFrame.src = updatedUrl;
+            sourceTag.src = directUrl;
+            videoTag.load(); // Reload video with new source
+            videoTag.play(); // Optional: autoplay
             videoPopup.style.display = "flex";
           }
         });
@@ -35,7 +31,9 @@ const VideoArea: React.FC = () => {
 
       const closeVideoPopup = () => {
         videoPopup.style.display = "none";
-        videoFrame.src = ""; // Reset video
+        videoTag.pause();
+        sourceTag.src = "";
+        videoTag.load(); // Clear the video
       };
 
       document
@@ -65,20 +63,23 @@ const VideoArea: React.FC = () => {
             <span className="close-btn" id="videoCloseButton">
               &times;
             </span>
-            <div className="ratio ratio-16x9">
-              <iframe
-                ref={videoFrameRef}
-                id="videoFrame"
-                allowFullScreen
-              ></iframe>
+            <div className="ratio ratio-16x9" style={{ width: "100%" }}>
+              <video
+                ref={videoTagRef}
+                controls
+                style={{ width: "100%", height: "100%" }}
+              >
+                <source ref={sourceRef} src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
       </div>
 
       <div
-        className="video-wrapper "
-        data-jarallax=""
+        className="video-wrapper"
+        data-jarallax
         data-speed="0.6"
         style={{
           backgroundImage: `url(/assets/img/phone-screen-girl-and-ring-light-for-live-streami-2025-04-06-07-24-53-utc.jpg)`,
@@ -95,7 +96,7 @@ const VideoArea: React.FC = () => {
               className="video-btn wow fadeInUp"
               data-wow-duration="1000ms"
               data-wow-delay="1000ms"
-              data-video="https://www.dropbox.com/scl/fi/wdk6cy3c9sl6i8rho3hn5/Final-Comp.mp4?rlkey=atjxt60murhv72v34unmhoowr&st=001xg023&dl=0"
+              data-video="https://www.dropbox.com/scl/fi/wdk6cy3c9sl6i8rho3hn5/Final-Comp.mp4?rlkey=atjxt60murhv72v34unmhoowr&st=rmcjb88c&dl=0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -15,17 +15,17 @@ const FooterOne = ({ style_2 }: any) => {
                 <a href="#">
                   <img
                     className="dark-logo"
-                    src="/assets/img/Group.png"
+                    src="/assets/img/footerLogo.svg"
                     alt=""
-                    width="120"
+                    width="210"
                     height="auto"
                     style={{ maxWidth: "100%" }}
                   />
                   <img
                     className="light-logo"
-                    src="/assets/img/Group.png"
+                    src="/assets/img/footerLogo.svg"
                     alt=""
-                    width="120"
+                    width="210"
                     height="auto"
                     style={{ maxWidth: "100%" }}
                   />
