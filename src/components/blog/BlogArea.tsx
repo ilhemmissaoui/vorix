@@ -61,7 +61,7 @@ const BlogArea = () => {
           <div className="row g-4 align-items-end justify-content-between">
             <div className="col-12 col-md-6 col-lg-5">
               <div className="section-heading">
-                <h2 className="mb-0">Let's See Our Projects</h2>
+                <h2 className="mb-0">Let's See Our Blogs</h2>
               </div>
             </div>
 

@@ -5974,6 +5974,7 @@ form .btn {
   border-radius: 20px;
   border: 1px solid rgba(254, 254, 254, 0.2);
   padding: 32px;
+  min-height: 400px;
   background-color: transparent;
   color: #ffffff;
   transition: all 0.3s ease;
