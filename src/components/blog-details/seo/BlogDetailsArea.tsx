@@ -19,6 +19,14 @@ const BlogDetailsArea = () => {
                   <a href="#">SEO</a>
                 </div>
                 <a className="post-title mb-5" href="#">
+                  Get to the limelight with Professional SEO Services
+                </a>
+              </div>
+
+              <div className="blog-details-content">
+                <p>What are professional SEO services?</p>
+
+                <p>
                   A new digital strategy is putting SEO in the spotlight.
                   Businesses are turning to professional SEO services to boost
                   visibility and gain a competitive edge online. Industry
@@ -28,21 +36,6 @@ const BlogDetailsArea = () => {
                   increase traffic, improve engagement, and elevate your brand's
                   online presence. If you're aiming to stand out, SEO is the
                   long-term move to watch.
-                </a>
-              </div>
-
-              <div className="blog-details-content">
-                <p>What are professional SEO services?</p>
-
-                <p>
-                  Professional SEO services are strategic techniques used to
-                  improve a website's visibility on search engines like Google.
-                  These services include keyword optimization, content creation,
-                  technical audits, and backlink building. The goal is to help
-                  businesses climb search rankings and get noticed by the right
-                  audience. With consistent efforts, SEO can push a brand into
-                  the digital limelight—boosting traffic, credibility, and
-                  long-term growth.
                 </p>
 
                 <div className="blog-quote">
@@ -82,50 +75,41 @@ const BlogDetailsArea = () => {
                 </p>
               </div>
 
-             
-
-            
-
               <div className="divider-sm"></div>
-
-           
-
-
             </div>
 
             <div className="col-12 col-md-7 col-lg-4">
               <div className="d-flex flex-column gap-5">
-
                 <div className="blog-widget">
                   <h4 className="mb-4">Categories</h4>
 
                   <ul className="blog-list">
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Agency
                         <span>(03)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Business
                         <span>(01)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Development
                         <span>(05)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         UI/UX Design
                         <span>(02)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Marketing
                         <span>(04)</span>
                       </Link>
@@ -139,11 +123,14 @@ const BlogDetailsArea = () => {
                   <div className="d-flex flex-column gap-4">
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/41.jpg" alt="" />
+                        <img
+                          src="/assets/img/influencers-vlogging-from-home-2025-03-16-03-48-42-utc.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             Graphic Design Agency your Brand Needs.
                           </Link>
                         </h6>
@@ -153,11 +140,11 @@ const BlogDetailsArea = () => {
 
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/42.jpg" alt="" />
+                        <img src="/assets/img/med5.jpg" alt="" />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             Providing Brilliant Ideas For your Business
                           </Link>
                         </h6>
@@ -167,11 +154,11 @@ const BlogDetailsArea = () => {
 
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/43.jpg" alt="" />
+                        <img src="/assets/img/med3.jpg" alt="" />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             The Latest Trends With Digital Marketing
                           </Link>
                         </h6>
@@ -180,7 +167,6 @@ const BlogDetailsArea = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

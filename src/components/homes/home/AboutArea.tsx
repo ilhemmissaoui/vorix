@@ -65,9 +65,7 @@ const AboutArea = () => {
             >
               <div className="about-us-text-content ps-md-4">
                 <div className="section-heading">
-                  <h3 className="mb-0" style={{ color: "#02A3AB" }}>
-                    Sole Digital Media
-                  </h3>
+                  <h1 className="mb-0">Sole Digital Media</h1>
                 </div>
                 <h6 className="mb-0">
                   Our services will help you provide the best solution so that

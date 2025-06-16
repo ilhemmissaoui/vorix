@@ -12,37 +12,63 @@ const BlogDetailsArea = () => {
           <div className="row g-4 g-xl-5">
             <div className="col-12 col-md-7 col-lg-8">
               <div className="single-blog">
-                <img src="/assets/img/blogs/seo.jpg" alt="" />
+                <img src="/assets/img/blogs/dev.jpg" alt="" />
                 <div className="blog-meta d-flex align-items-center">
                   <a href="#">March 26, 24</a>
                   <div className="dot"></div>
-                  <a href="#">Branding Design</a>
+                  <a href="#">Web Development</a>
                 </div>
                 <a className="post-title mb-5" href="#">
-                  A new digital strategy is putting SEO in the spotlight.
-                  Businesses are turning to professional SEO services to boost
-                  visibility and gain a competitive edge online. Industry
-                  experts say it's the most effective way to get to the
-                  limelight in search engine rankings. While results don't
-                  happen overnight, a well-crafted SEO plan can steadily
-                  increase traffic, improve engagement, and elevate your brand's
-                  online presence. If you're aiming to stand out, SEO is the
-                  long-term move to watch.
+                  Transform Your Online Presence with Advanced Web Development
+                  Services
                 </a>
               </div>
 
               <div className="blog-details-content">
-                <p>What are professional SEO services?</p>
+                <p>How Important is a Well-Designed Website?</p>
 
                 <p>
-                  Professional SEO services are strategic techniques used to
-                  improve a website's visibility on search engines like Google.
-                  These services include keyword optimization, content creation,
-                  technical audits, and backlink building. The goal is to help
-                  businesses climb search rankings and get noticed by the right
-                  audience. With consistent efforts, SEO can push a brand into
-                  the digital limelight—boosting traffic, credibility, and
-                  long-term growth.
+                  A well-designed website will go a long way in portraying your
+                  brand. It should be pleasing to the human eye, user-friendly,
+                  and high on performance. Chief among the benefits of a
+                  well-built website are:
+                  <ul className="list-unstyled">
+                    <li>
+                      <span className="material-symbols-outlined">
+                        check_circle
+                      </span>
+                      Brand Image Enhancement: A polished website strengthens
+                      your brand image.
+                    </li>
+                    <li>
+                      <span className="material-symbols-outlined">
+                        check_circle
+                      </span>
+                      Improved User Experience: Intuitive navigation and design
+                      increase user satisfaction.
+                    </li>
+                    <li>
+                      <span className="material-symbols-outlined">
+                        check_circle
+                      </span>
+                      Website Traffic Growth: More visitors are attracted
+                      through an SEO-optimized website.
+                    </li>
+                    <li>
+                      <span className="material-symbols-outlined">
+                        check_circle
+                      </span>
+                      Conversion Rate Optimization: The less painful the user
+                      experience, the higher the conversion rate.
+                    </li>
+                    <li>
+                      <span className="material-symbols-outlined">
+                        check_circle
+                      </span>
+                      Valuable Insight Provision: Analytics integration provides
+                      insight into user behaviors and website performance.
+                    </li>
+                  </ul>
                 </p>
 
                 <div className="blog-quote">
@@ -66,25 +92,24 @@ const BlogDetailsArea = () => {
                   </div>
 
                   <p>
-                    “And the day came when staying hidden in search results was
-                    more costly than the effort it took to rise to the top.”
+                    “And the day came when being silent on social media cost
+                    more than showing up, engaging, & building your brand every
+                    day.”
                   </p>
                 </div>
 
                 <p>
-                  SEO isn't just a buzzword—it's essential to your digital
-                  success. Search engines like Google use complex algorithms to
-                  rank content, and SEO helps optimize your site's structure,
-                  content, and performance to boost visibility and traffic. At
-                  Sole Digital Media, our experts stay ahead of algorithm
-                  updates to craft strategies that keep your business leading in
-                  the digital space.
+                  It affects the rate of visitor retention and impacts SEO
+                  rankings. Performance optimization techniques ensure that a
+                  website is loaded quickly and efficiently by applying
+                  techniques such as image compression, browser caching, and
+                  code minification. Faster loading sites reduce bounce rates
+                  and increase user satisfaction.
                 </p>
               </div>
 
               <div className="divider-sm"></div>
             </div>
-
             <div className="col-12 col-md-7 col-lg-4">
               <div className="d-flex flex-column gap-5">
                 <div className="blog-widget">
@@ -92,31 +117,31 @@ const BlogDetailsArea = () => {
 
                   <ul className="blog-list">
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Agency
                         <span>(03)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Business
                         <span>(01)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Development
                         <span>(05)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         UI/UX Design
                         <span>(02)</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog-details">
+                      <Link href="/blog">
                         Marketing
                         <span>(04)</span>
                       </Link>
@@ -130,11 +155,14 @@ const BlogDetailsArea = () => {
                   <div className="d-flex flex-column gap-4">
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/41.jpg" alt="" />
+                        <img
+                          src="/assets/img/influencers-vlogging-from-home-2025-03-16-03-48-42-utc.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             Graphic Design Agency your Brand Needs.
                           </Link>
                         </h6>
@@ -144,11 +172,11 @@ const BlogDetailsArea = () => {
 
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/42.jpg" alt="" />
+                        <img src="/assets/img/med5.jpg" alt="" />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             Providing Brilliant Ideas For your Business
                           </Link>
                         </h6>
@@ -158,11 +186,11 @@ const BlogDetailsArea = () => {
 
                     <div className="widget-blog-post">
                       <div className="blog-thumbnail">
-                        <img src="/assets/img/bg-img/43.jpg" alt="" />
+                        <img src="/assets/img/med3.jpg" alt="" />
                       </div>
                       <div className="blog-content">
                         <h6>
-                          <Link href="/blog-details">
+                          <Link href="/blog">
                             The Latest Trends With Digital Marketing
                           </Link>
                         </h6>
